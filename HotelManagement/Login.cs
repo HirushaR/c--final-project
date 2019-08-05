@@ -37,6 +37,12 @@ namespace Hotel_Manager
                     Kitchen kitchen_management = new Kitchen();
                     kitchen_management.Show();
                 }
+                else if (verifier("bar".Trim(), usernameTextBox.Text.Trim(), passwordTextBox.Text.Trim()))
+                {
+                    this.Hide();
+                    bar br_management = new bar();
+                    br_management.Show();
+                }
                 else
                 {
                     MetroFramework.MetroMessageBox.Show(this, "Username or Password is wrong, try again", "Login Failed", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);

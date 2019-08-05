@@ -179,3 +179,5 @@ E:\hiru\works\C#\HotelManagement-master\HotelManagement\bin\Debug\Twilio.Api.xml
 E:\hiru\works\C#\HotelManagement-master\HotelManagement\obj\Debug\Hotel_Manager.exe.manifest
 E:\hiru\works\C#\HotelManagement-master\HotelManagement\obj\Debug\Hotel_Manager.application
 E:\hiru\works\C#\HotelManagement-master\HotelManagement\obj\Debug\HotelManagement.csproj.CopyComplete
+E:\hiru\works\C#\HotelManagement-master\HotelManagement\obj\Debug\Hotel_Manager.bar.resources
+E:\hiru\works\C#\HotelManagement-master\HotelManagement\obj\Debug\Hotel_Manager.manager.resources

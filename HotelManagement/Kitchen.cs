@@ -321,6 +321,21 @@ namespace Hotel_Manager
             dataGridView1.DataMember = "menuItems";
         }
 
+        private void OverviewDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void TodoTabPage_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MetroButton7_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void listBoxFromDataBase()
         {
 

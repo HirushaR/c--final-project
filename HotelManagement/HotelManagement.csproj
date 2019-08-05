@@ -88,6 +88,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="bar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bar.Designer.cs">
+      <DependentUpon>bar.cs</DependentUpon>
+    </Compile>
     <Compile Include="FinalizePayment.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,8 +130,17 @@
     <Compile Include="Frontend.Designer.cs">
       <DependentUpon>Frontend.cs</DependentUpon>
     </Compile>
+    <Compile Include="manager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manager.Designer.cs">
+      <DependentUpon>manager.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="bar.resx">
+      <DependentUpon>bar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FinalizePayment.resx">
       <DependentUpon>FinalizePayment.cs</DependentUpon>
     </EmbeddedResource>
@@ -143,6 +158,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frontend.resx">
       <DependentUpon>Frontend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manager.resx">
+      <DependentUpon>manager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
