@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Hotel_Manager.exe" size="7717888">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Hotel_Manager.exe" size="7720960">
       <assemblyIdentity name="Hotel_Manager" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>jE1iIX1/KWbXkLgeAP5/n0ubnTbkmeYmcX/OX49ThVg=</dsig:DigestValue>
+        <dsig:DigestValue>z7m3Mp/nRwsMFTYiRFVwtzc6fPtzVRUfqsArjnrMsfo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -119,7 +119,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>kgkaygchoEyaKLO2nURvFzWGj0e5r75+oJrEnykv3Ws=</dsig:DigestValue>
+      <dsig:DigestValue>wJ2djdB0lHlufpY36TDhs6JSzyvQYnP6xcAR+aJvvUE=</dsig:DigestValue>
     </hash>
   </file>
   <file name="frontend_reservation_log.ldf" size="2162688" writeableType="applicationData">
@@ -128,7 +128,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>DceesNrXPxJWDDxukhXALuMWd3b4+3xSHvLNiDjX5HY=</dsig:DigestValue>
+      <dsig:DigestValue>tJCRhmXdKF8qgASYjzNQh6YSRaIaXWLRWL+l3cH+uW8=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Hotel_Manager.exe.config" size="930">
@@ -146,7 +146,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>uOXpHvKEoCbpZBBWCDwxmL+aft4IPzUyXCASV8IN4+o=</dsig:DigestValue>
+      <dsig:DigestValue>iDdjdJ8Hm5xAN5GvkVgY/j+SnFJ5L/cVx4gYdSDko5Y=</dsig:DigestValue>
     </hash>
   </file>
   <file name="login_manager_log.ldf" size="2162688" writeableType="applicationData">
@@ -155,7 +155,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>31GYnBEP8z4d9wJN82kwE5YP1/8vrNJ3sG4ozUWvHm4=</dsig:DigestValue>
+      <dsig:DigestValue>A+kMh9MRkU2ibZvOhPQAfbtGyH/EQiYFmq7VItULL34=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

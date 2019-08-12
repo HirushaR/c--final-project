@@ -34,7 +34,6 @@
             this.signinButton = new MetroFramework.Controls.MetroButton();
             this.passwordTextBox = new MetroFramework.Controls.MetroTextBox();
             this.usernameTextBox = new MetroFramework.Controls.MetroTextBox();
-            this.LicenseCallButton = new MetroFramework.Controls.MetroButton();
             this.SuspendLayout();
             // 
             // usernameLabel
@@ -42,9 +41,10 @@
             this.usernameLabel.AutoSize = true;
             this.usernameLabel.FontWeight = MetroFramework.MetroLabelWeight.Regular;
             this.usernameLabel.ForeColor = System.Drawing.Color.Black;
-            this.usernameLabel.Location = new System.Drawing.Point(163, 95);
+            this.usernameLabel.Location = new System.Drawing.Point(217, 117);
+            this.usernameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.usernameLabel.Name = "usernameLabel";
-            this.usernameLabel.Size = new System.Drawing.Size(71, 19);
+            this.usernameLabel.Size = new System.Drawing.Size(75, 20);
             this.usernameLabel.Style = MetroFramework.MetroColorStyle.Blue;
             this.usernameLabel.TabIndex = 3;
             this.usernameLabel.Text = "Username";
@@ -55,9 +55,10 @@
             // 
             this.passwordLabel.AutoSize = true;
             this.passwordLabel.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.passwordLabel.Location = new System.Drawing.Point(162, 153);
+            this.passwordLabel.Location = new System.Drawing.Point(216, 188);
+            this.passwordLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.passwordLabel.Name = "passwordLabel";
-            this.passwordLabel.Size = new System.Drawing.Size(67, 19);
+            this.passwordLabel.Size = new System.Drawing.Size(70, 20);
             this.passwordLabel.Style = MetroFramework.MetroColorStyle.Blue;
             this.passwordLabel.TabIndex = 5;
             this.passwordLabel.Text = "Password";
@@ -67,9 +68,10 @@
             // signinButton
             // 
             this.signinButton.DisplayFocus = true;
-            this.signinButton.Location = new System.Drawing.Point(165, 233);
+            this.signinButton.Location = new System.Drawing.Point(220, 287);
+            this.signinButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.signinButton.Name = "signinButton";
-            this.signinButton.Size = new System.Drawing.Size(203, 30);
+            this.signinButton.Size = new System.Drawing.Size(271, 37);
             this.signinButton.Style = MetroFramework.MetroColorStyle.Green;
             this.signinButton.TabIndex = 6;
             this.signinButton.Text = "Sign in";
@@ -84,14 +86,15 @@
             this.passwordTextBox.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.passwordTextBox.Icon = ((System.Drawing.Image)(resources.GetObject("passwordTextBox.Icon")));
             this.passwordTextBox.Lines = new string[0];
-            this.passwordTextBox.Location = new System.Drawing.Point(164, 175);
+            this.passwordTextBox.Location = new System.Drawing.Point(219, 215);
+            this.passwordTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.passwordTextBox.MaxLength = 32767;
             this.passwordTextBox.Name = "passwordTextBox";
             this.passwordTextBox.PasswordChar = '*';
             this.passwordTextBox.PromptText = "Password";
             this.passwordTextBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.passwordTextBox.SelectedText = "";
-            this.passwordTextBox.Size = new System.Drawing.Size(204, 29);
+            this.passwordTextBox.Size = new System.Drawing.Size(272, 36);
             this.passwordTextBox.TabIndex = 2;
             this.passwordTextBox.UseSelectable = true;
             this.passwordTextBox.UseStyleColors = true;
@@ -103,14 +106,15 @@
             this.usernameTextBox.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.usernameTextBox.Icon = ((System.Drawing.Image)(resources.GetObject("usernameTextBox.Icon")));
             this.usernameTextBox.Lines = new string[0];
-            this.usernameTextBox.Location = new System.Drawing.Point(164, 120);
+            this.usernameTextBox.Location = new System.Drawing.Point(219, 148);
+            this.usernameTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.usernameTextBox.MaxLength = 32767;
             this.usernameTextBox.Name = "usernameTextBox";
             this.usernameTextBox.PasswordChar = '\0';
             this.usernameTextBox.PromptText = "Username";
             this.usernameTextBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.usernameTextBox.SelectedText = "";
-            this.usernameTextBox.Size = new System.Drawing.Size(204, 29);
+            this.usernameTextBox.Size = new System.Drawing.Size(272, 36);
             this.usernameTextBox.Style = MetroFramework.MetroColorStyle.Blue;
             this.usernameTextBox.TabIndex = 0;
             this.usernameTextBox.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -118,29 +122,20 @@
             this.usernameTextBox.UseStyleColors = true;
             this.usernameTextBox.Click += new System.EventHandler(this.usernameTextBox_Click);
             // 
-            // LicenseCallButton
+            // Login
             // 
-            this.LicenseCallButton.Location = new System.Drawing.Point(468, 354);
-            this.LicenseCallButton.Name = "LicenseCallButton";
-            this.LicenseCallButton.Size = new System.Drawing.Size(48, 23);
-            this.LicenseCallButton.TabIndex = 7;
-            this.LicenseCallButton.Text = "License";
-            this.LicenseCallButton.UseSelectable = true;
-            this.LicenseCallButton.Click += new System.EventHandler(this.LicenseCallButton_Click);
-            // 
-            // login
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(516, 377);
-            this.Controls.Add(this.LicenseCallButton);
+            this.ClientSize = new System.Drawing.Size(688, 464);
             this.Controls.Add(this.passwordTextBox);
             this.Controls.Add(this.passwordLabel);
             this.Controls.Add(this.usernameLabel);
             this.Controls.Add(this.signinButton);
             this.Controls.Add(this.usernameTextBox);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
-            this.Name = "login";
+            this.Name = "Login";
+            this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Teal;
             this.Text = "Login";
@@ -157,7 +152,6 @@
         private MetroFramework.Controls.MetroLabel usernameLabel;
         private MetroFramework.Controls.MetroLabel passwordLabel;
         private MetroFramework.Controls.MetroTextBox passwordTextBox;
-        private MetroFramework.Controls.MetroButton LicenseCallButton;
         
        
     }

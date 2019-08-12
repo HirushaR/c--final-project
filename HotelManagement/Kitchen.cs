@@ -119,9 +119,9 @@ namespace Hotel_Manager
             string no = metroTextBox1.Text.Trim();
             string name = metroTextBox2.Text.Trim();
             string des = metroTextBox3.Text.Trim();
-            // int price = int.Parse(metroTextBox4.Text);
+             int price = int.Parse(metroTextBox4.Text);
             string cat = metroTextBox5.Text;
-            queryString = "Insert into menuItems values('" + no + "','" + name + "','" + des + "','" + 100 + "','" + cat + "')";
+            queryString = "Insert into menuItems values('" + no + "','" + name + "','" + des + "','" + price + "','" + cat + "')";
 
 
             query = new SqlCommand(queryString, connection);
@@ -333,7 +333,26 @@ namespace Hotel_Manager
 
         private void MetroButton7_Click(object sender, EventArgs e)
         {
+            string name = metroTextBox7.Text;
+            string des = metroTextBox8.Text;
+            int que = int.Parse(metroTextBox9.Text);
+            SendIR ir = new SendIR();
+            ir.setItem(name,des,que);
+            int c = ir.retu();
+            if(c ==1 )
+            {
+                MessageBox.Show("inserted");
+            }
+            else
+            {
+                MessageBox.Show("error");
+            }
 
+        }
+
+        private void MetroButton8_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
 
         private void listBoxFromDataBase()

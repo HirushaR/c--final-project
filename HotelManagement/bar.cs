@@ -220,7 +220,7 @@ namespace Hotel_Manager
              */
             foreach (DataGridViewRow row in dataGridView1.Rows)
             {
-                total += (float)Convert.ToDouble(row.Cells[4].Value);
+                total += (float)Convert.ToDouble(row.Cells[5].Value);
 
             }
             metroTextBox6.Text = total.ToString();
@@ -252,16 +252,26 @@ namespace Hotel_Manager
                 {
                     connection.Open();
                     cmd.ExecuteNonQuery();
-
+                    MessageBox.Show("Inserted");
 
                 }
                 catch (SqlException se)
                 {
-                    MessageBox.Show("" + se);
+                    MessageBox.Show("Error Inserting" + se);
                 }
             }
 
            
+        }
+
+        private void MetroButton3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
+        private void MetroTextBox5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

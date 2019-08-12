@@ -292,6 +292,10 @@ namespace Hotel_Manager
       
         private void submitButton_Click(object sender, EventArgs e)
         {
+            string fname, lname,count;
+            fname = firstNameTextBox.Text;
+            lname = lastNameTextBox.Text;
+   
             birthday = (monthComboBox.SelectedItem) + "-" + (dayComboBox.SelectedIndex + 1) + "-" + yearTextBox.Text;
             Int32 getIDBack = 0;
             string query = "insert into reservation(first_name, last_name, birth_day, gender, phone_number, email_address, number_guest, street_address, apt_suite,city, state, zip_code, room_type, room_floor, room_number, total_bill,payment_type, card_type, card_number,card_exp,card_cvc, arrival_time, leaving_time, check_in, break_fast, lunch, dinner, supply_status, cleaning, towel, s_surprise, food_bill) values('" + firstNameTextBox.Text +
@@ -708,6 +712,26 @@ namespace Hotel_Manager
             }
         }
 
+        private void ResTotalDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void MetroButton1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void MetroButton1_Click_1(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void MetroButton1_Click_2(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
         private void foodSupplyCheckBox_CheckedChanged(object sender, EventArgs e)
         {
             if (foodSupplyCheckBox.Checked)
@@ -842,10 +866,20 @@ namespace Hotel_Manager
 
         private void phoneNumberTextBox_Leave(object sender, EventArgs e)
         {
-            RecvPhoneNumber = "+1"+phoneNumberTextBox.Text.Replace(" ", string.Empty);
-            long getphn = Convert.ToInt64(phoneNumberTextBox.Text);
-            string formatString = String.Format("{0:(000)000-0000}", getphn);
-            phoneNumberTextBox.Text = formatString;
+            try
+            {
+                RecvPhoneNumber = "+1" + phoneNumberTextBox.Text.Replace(" ", string.Empty);
+                long getphn = Convert.ToInt64(phoneNumberTextBox.Text);
+                string formatString = String.Format("{0:(000)000-0000}", getphn);
+                phoneNumberTextBox.Text = formatString;
+
+            }
+            catch(Exception es)
+            {
+                MessageBox.Show("" + es);
+            }
+
+
         }
         private void searchButton_Click(object sender, EventArgs e)
         {

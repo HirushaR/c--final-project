@@ -87,6 +87,7 @@
             this.roomReservedListBox = new System.Windows.Forms.ListBox();
             this.roomOccupiedListBox = new System.Windows.Forms.ListBox();
             this.occupiedLabel = new MetroFramework.Controls.MetroLabel();
+            this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.resPanel.SuspendLayout();
             this.reservationPage.SuspendLayout();
             this.rightMPanel.SuspendLayout();
@@ -102,13 +103,14 @@
             // resPanel
             // 
             this.resPanel.Controls.Add(this.reservationPage);
-            this.resPanel.Controls.Add(this.searchPage);
             this.resPanel.Controls.Add(this.metroTabPage2);
+            this.resPanel.Controls.Add(this.searchPage);
             this.resPanel.Controls.Add(this.roomPage);
-            this.resPanel.Location = new System.Drawing.Point(8, 59);
+            this.resPanel.Location = new System.Drawing.Point(11, 73);
+            this.resPanel.Margin = new System.Windows.Forms.Padding(4);
             this.resPanel.Name = "resPanel";
             this.resPanel.SelectedIndex = 0;
-            this.resPanel.Size = new System.Drawing.Size(984, 482);
+            this.resPanel.Size = new System.Drawing.Size(1312, 593);
             this.resPanel.Style = MetroFramework.MetroColorStyle.Green;
             this.resPanel.TabIndex = 0;
             this.resPanel.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -121,17 +123,18 @@
             this.reservationPage.Controls.Add(this.leftMPanel);
             this.reservationPage.HorizontalScrollbarBarColor = true;
             this.reservationPage.HorizontalScrollbarHighlightOnWheel = false;
-            this.reservationPage.HorizontalScrollbarSize = 10;
+            this.reservationPage.HorizontalScrollbarSize = 12;
             this.reservationPage.Location = new System.Drawing.Point(4, 38);
+            this.reservationPage.Margin = new System.Windows.Forms.Padding(4);
             this.reservationPage.Name = "reservationPage";
-            this.reservationPage.Size = new System.Drawing.Size(976, 440);
+            this.reservationPage.Size = new System.Drawing.Size(1304, 551);
             this.reservationPage.Style = MetroFramework.MetroColorStyle.Green;
             this.reservationPage.TabIndex = 0;
             this.reservationPage.Text = "Reservation";
             this.reservationPage.Theme = MetroFramework.MetroThemeStyle.Light;
             this.reservationPage.VerticalScrollbarBarColor = true;
             this.reservationPage.VerticalScrollbarHighlightOnWheel = false;
-            this.reservationPage.VerticalScrollbarSize = 10;
+            this.reservationPage.VerticalScrollbarSize = 13;
             // 
             // rightMPanel
             // 
@@ -144,30 +147,32 @@
             this.rightMPanel.Controls.Add(this.updateButton);
             this.rightMPanel.HorizontalScrollbarBarColor = true;
             this.rightMPanel.HorizontalScrollbarHighlightOnWheel = false;
-            this.rightMPanel.HorizontalScrollbarSize = 10;
-            this.rightMPanel.Location = new System.Drawing.Point(708, 14);
+            this.rightMPanel.HorizontalScrollbarSize = 12;
+            this.rightMPanel.Location = new System.Drawing.Point(944, 17);
+            this.rightMPanel.Margin = new System.Windows.Forms.Padding(4);
             this.rightMPanel.Name = "rightMPanel";
-            this.rightMPanel.Size = new System.Drawing.Size(265, 421);
+            this.rightMPanel.Size = new System.Drawing.Size(353, 518);
             this.rightMPanel.TabIndex = 34;
             this.rightMPanel.UseCustomBackColor = true;
             this.rightMPanel.UseCustomForeColor = true;
             this.rightMPanel.UseStyleColors = true;
             this.rightMPanel.VerticalScrollbarBarColor = true;
             this.rightMPanel.VerticalScrollbarHighlightOnWheel = false;
-            this.rightMPanel.VerticalScrollbarSize = 10;
+            this.rightMPanel.VerticalScrollbarSize = 13;
             // 
             // resEditButton
             // 
             this.resEditButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.resEditButton.ForeColor = System.Drawing.Color.Green;
             this.resEditButton.FormattingEnabled = true;
-            this.resEditButton.ItemHeight = 23;
+            this.resEditButton.ItemHeight = 24;
             this.resEditButton.Items.AddRange(new object[] {
             "[ID]    [NAME]    [PHONE NUMBER]"});
-            this.resEditButton.Location = new System.Drawing.Point(10, 30);
+            this.resEditButton.Location = new System.Drawing.Point(13, 37);
+            this.resEditButton.Margin = new System.Windows.Forms.Padding(4);
             this.resEditButton.Name = "resEditButton";
             this.resEditButton.PromptText = "Select reservation to edit";
-            this.resEditButton.Size = new System.Drawing.Size(252, 29);
+            this.resEditButton.Size = new System.Drawing.Size(335, 30);
             this.resEditButton.TabIndex = 20;
             this.resEditButton.UseCustomForeColor = true;
             this.resEditButton.UseSelectable = true;
@@ -177,9 +182,10 @@
             // 
             // newButton
             // 
-            this.newButton.Location = new System.Drawing.Point(10, 375);
+            this.newButton.Location = new System.Drawing.Point(13, 462);
+            this.newButton.Margin = new System.Windows.Forms.Padding(4);
             this.newButton.Name = "newButton";
-            this.newButton.Size = new System.Drawing.Size(245, 32);
+            this.newButton.Size = new System.Drawing.Size(327, 39);
             this.newButton.Style = MetroFramework.MetroColorStyle.Green;
             this.newButton.TabIndex = 22;
             this.newButton.Text = "New reservation";
@@ -190,9 +196,10 @@
             // deleteButton
             // 
             this.deleteButton.Highlight = true;
-            this.deleteButton.Location = new System.Drawing.Point(10, 288);
+            this.deleteButton.Location = new System.Drawing.Point(13, 354);
+            this.deleteButton.Margin = new System.Windows.Forms.Padding(4);
             this.deleteButton.Name = "deleteButton";
-            this.deleteButton.Size = new System.Drawing.Size(245, 34);
+            this.deleteButton.Size = new System.Drawing.Size(327, 42);
             this.deleteButton.Style = MetroFramework.MetroColorStyle.Red;
             this.deleteButton.TabIndex = 23;
             this.deleteButton.Text = "Delete";
@@ -204,9 +211,10 @@
             // 
             // editButton
             // 
-            this.editButton.Location = new System.Drawing.Point(10, 335);
+            this.editButton.Location = new System.Drawing.Point(13, 412);
+            this.editButton.Margin = new System.Windows.Forms.Padding(4);
             this.editButton.Name = "editButton";
-            this.editButton.Size = new System.Drawing.Size(245, 32);
+            this.editButton.Size = new System.Drawing.Size(327, 39);
             this.editButton.Style = MetroFramework.MetroColorStyle.Green;
             this.editButton.TabIndex = 18;
             this.editButton.Text = "Edit existing Reservation";
@@ -218,9 +226,10 @@
             // 
             this.updateButton.Enabled = false;
             this.updateButton.Highlight = true;
-            this.updateButton.Location = new System.Drawing.Point(10, 245);
+            this.updateButton.Location = new System.Drawing.Point(13, 302);
+            this.updateButton.Margin = new System.Windows.Forms.Padding(4);
             this.updateButton.Name = "updateButton";
-            this.updateButton.Size = new System.Drawing.Size(245, 34);
+            this.updateButton.Size = new System.Drawing.Size(327, 42);
             this.updateButton.Style = MetroFramework.MetroColorStyle.Green;
             this.updateButton.TabIndex = 19;
             this.updateButton.Text = "Update";
@@ -251,25 +260,27 @@
             this.middlePanel.Controls.Add(this.choiceLabel);
             this.middlePanel.HorizontalScrollbarBarColor = true;
             this.middlePanel.HorizontalScrollbarHighlightOnWheel = false;
-            this.middlePanel.HorizontalScrollbarSize = 10;
-            this.middlePanel.Location = new System.Drawing.Point(355, 14);
+            this.middlePanel.HorizontalScrollbarSize = 12;
+            this.middlePanel.Location = new System.Drawing.Point(473, 17);
+            this.middlePanel.Margin = new System.Windows.Forms.Padding(4);
             this.middlePanel.Name = "middlePanel";
-            this.middlePanel.Size = new System.Drawing.Size(345, 421);
+            this.middlePanel.Size = new System.Drawing.Size(460, 518);
             this.middlePanel.TabIndex = 16;
             this.middlePanel.UseCustomBackColor = true;
             this.middlePanel.UseCustomForeColor = true;
             this.middlePanel.UseStyleColors = true;
             this.middlePanel.VerticalScrollbarBarColor = true;
             this.middlePanel.VerticalScrollbarHighlightOnWheel = false;
-            this.middlePanel.VerticalScrollbarSize = 10;
+            this.middlePanel.VerticalScrollbarSize = 13;
             // 
             // smsCheckBox
             // 
             this.smsCheckBox.AutoSize = true;
             this.smsCheckBox.BackColor = System.Drawing.Color.Transparent;
-            this.smsCheckBox.Location = new System.Drawing.Point(105, 291);
+            this.smsCheckBox.Location = new System.Drawing.Point(140, 358);
+            this.smsCheckBox.Margin = new System.Windows.Forms.Padding(4);
             this.smsCheckBox.Name = "smsCheckBox";
-            this.smsCheckBox.Size = new System.Drawing.Size(78, 15);
+            this.smsCheckBox.Size = new System.Drawing.Size(86, 17);
             this.smsCheckBox.Style = MetroFramework.MetroColorStyle.Green;
             this.smsCheckBox.TabIndex = 35;
             this.smsCheckBox.Text = "Send sms?";
@@ -280,9 +291,10 @@
             // 
             this.foodSupplyCheckBox.AutoSize = true;
             this.foodSupplyCheckBox.BackColor = System.Drawing.Color.Transparent;
-            this.foodSupplyCheckBox.Location = new System.Drawing.Point(194, 290);
+            this.foodSupplyCheckBox.Location = new System.Drawing.Point(259, 357);
+            this.foodSupplyCheckBox.Margin = new System.Windows.Forms.Padding(4);
             this.foodSupplyCheckBox.Name = "foodSupplyCheckBox";
-            this.foodSupplyCheckBox.Size = new System.Drawing.Size(133, 15);
+            this.foodSupplyCheckBox.Size = new System.Drawing.Size(146, 17);
             this.foodSupplyCheckBox.Style = MetroFramework.MetroColorStyle.Green;
             this.foodSupplyCheckBox.TabIndex = 34;
             this.foodSupplyCheckBox.Text = "Food/Supply status ?";
@@ -294,9 +306,10 @@
             // 
             this.checkinCheckBox.AutoSize = true;
             this.checkinCheckBox.BackColor = System.Drawing.Color.Transparent;
-            this.checkinCheckBox.Location = new System.Drawing.Point(16, 291);
+            this.checkinCheckBox.Location = new System.Drawing.Point(21, 358);
+            this.checkinCheckBox.Margin = new System.Windows.Forms.Padding(4);
             this.checkinCheckBox.Name = "checkinCheckBox";
-            this.checkinCheckBox.Size = new System.Drawing.Size(77, 15);
+            this.checkinCheckBox.Size = new System.Drawing.Size(82, 17);
             this.checkinCheckBox.Style = MetroFramework.MetroColorStyle.Green;
             this.checkinCheckBox.TabIndex = 33;
             this.checkinCheckBox.Text = "Check in ?";
@@ -306,9 +319,10 @@
             // 
             // foodMenuButton
             // 
-            this.foodMenuButton.Location = new System.Drawing.Point(16, 243);
+            this.foodMenuButton.Location = new System.Drawing.Point(21, 299);
+            this.foodMenuButton.Margin = new System.Windows.Forms.Padding(4);
             this.foodMenuButton.Name = "foodMenuButton";
-            this.foodMenuButton.Size = new System.Drawing.Size(314, 34);
+            this.foodMenuButton.Size = new System.Drawing.Size(419, 42);
             this.foodMenuButton.Style = MetroFramework.MetroColorStyle.Green;
             this.foodMenuButton.TabIndex = 23;
             this.foodMenuButton.Text = "Food and menu";
@@ -319,7 +333,7 @@
             // qtGuestComboBox
             // 
             this.qtGuestComboBox.FormattingEnabled = true;
-            this.qtGuestComboBox.ItemHeight = 23;
+            this.qtGuestComboBox.ItemHeight = 24;
             this.qtGuestComboBox.Items.AddRange(new object[] {
             "1",
             "2",
@@ -327,18 +341,20 @@
             "4",
             "5",
             "6"});
-            this.qtGuestComboBox.Location = new System.Drawing.Point(16, 30);
+            this.qtGuestComboBox.Location = new System.Drawing.Point(21, 37);
+            this.qtGuestComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.qtGuestComboBox.Name = "qtGuestComboBox";
             this.qtGuestComboBox.PromptText = "# of guests";
-            this.qtGuestComboBox.Size = new System.Drawing.Size(151, 29);
+            this.qtGuestComboBox.Size = new System.Drawing.Size(200, 30);
             this.qtGuestComboBox.TabIndex = 25;
             this.qtGuestComboBox.UseSelectable = true;
             // 
             // finalizeButton
             // 
-            this.finalizeButton.Location = new System.Drawing.Point(16, 337);
+            this.finalizeButton.Location = new System.Drawing.Point(21, 415);
+            this.finalizeButton.Margin = new System.Windows.Forms.Padding(4);
             this.finalizeButton.Name = "finalizeButton";
-            this.finalizeButton.Size = new System.Drawing.Size(314, 31);
+            this.finalizeButton.Size = new System.Drawing.Size(419, 38);
             this.finalizeButton.Style = MetroFramework.MetroColorStyle.Green;
             this.finalizeButton.TabIndex = 22;
             this.finalizeButton.Text = "Finalize bill";
@@ -351,9 +367,10 @@
             this.metroLabel12.AutoSize = true;
             this.metroLabel12.BackColor = System.Drawing.Color.Transparent;
             this.metroLabel12.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel12.Location = new System.Drawing.Point(16, 169);
+            this.metroLabel12.Location = new System.Drawing.Point(21, 208);
+            this.metroLabel12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabel12.Name = "metroLabel12";
-            this.metroLabel12.Size = new System.Drawing.Size(110, 19);
+            this.metroLabel12.Size = new System.Drawing.Size(120, 20);
             this.metroLabel12.TabIndex = 32;
             this.metroLabel12.Text = "Deperture [date]";
             this.metroLabel12.UseCustomBackColor = true;
@@ -362,9 +379,10 @@
             // submitButton
             // 
             this.submitButton.Highlight = true;
-            this.submitButton.Location = new System.Drawing.Point(16, 372);
+            this.submitButton.Location = new System.Drawing.Point(21, 458);
+            this.submitButton.Margin = new System.Windows.Forms.Padding(4);
             this.submitButton.Name = "submitButton";
-            this.submitButton.Size = new System.Drawing.Size(314, 36);
+            this.submitButton.Size = new System.Drawing.Size(419, 44);
             this.submitButton.Style = MetroFramework.MetroColorStyle.Green;
             this.submitButton.TabIndex = 17;
             this.submitButton.Text = "Submit";
@@ -380,16 +398,17 @@
             this.depDatePicker.CustomFormat = "MM-dd-yyyy";
             this.depDatePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.depDatePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.depDatePicker.Location = new System.Drawing.Point(16, 191);
+            this.depDatePicker.Location = new System.Drawing.Point(21, 235);
+            this.depDatePicker.Margin = new System.Windows.Forms.Padding(4);
             this.depDatePicker.Name = "depDatePicker";
-            this.depDatePicker.Size = new System.Drawing.Size(316, 26);
+            this.depDatePicker.Size = new System.Drawing.Size(420, 30);
             this.depDatePicker.TabIndex = 31;
             this.depDatePicker.Value = new System.DateTime(2014, 4, 27, 0, 0, 0, 0);
             // 
             // roomNComboBox
             // 
             this.roomNComboBox.FormattingEnabled = true;
-            this.roomNComboBox.ItemHeight = 23;
+            this.roomNComboBox.ItemHeight = 24;
             this.roomNComboBox.Items.AddRange(new object[] {
             "101",
             "102",
@@ -441,27 +460,29 @@
             "508",
             "509",
             "510"});
-            this.roomNComboBox.Location = new System.Drawing.Point(173, 83);
+            this.roomNComboBox.Location = new System.Drawing.Point(231, 102);
+            this.roomNComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.roomNComboBox.Name = "roomNComboBox";
             this.roomNComboBox.PromptText = "#";
-            this.roomNComboBox.Size = new System.Drawing.Size(159, 29);
+            this.roomNComboBox.Size = new System.Drawing.Size(211, 30);
             this.roomNComboBox.TabIndex = 24;
             this.roomNComboBox.UseSelectable = true;
             // 
             // floorComboBox
             // 
             this.floorComboBox.FormattingEnabled = true;
-            this.floorComboBox.ItemHeight = 23;
+            this.floorComboBox.ItemHeight = 24;
             this.floorComboBox.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
             "4",
             "5"});
-            this.floorComboBox.Location = new System.Drawing.Point(16, 83);
+            this.floorComboBox.Location = new System.Drawing.Point(21, 102);
+            this.floorComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.floorComboBox.Name = "floorComboBox";
             this.floorComboBox.PromptText = "Floor";
-            this.floorComboBox.Size = new System.Drawing.Size(151, 29);
+            this.floorComboBox.Size = new System.Drawing.Size(200, 30);
             this.floorComboBox.TabIndex = 23;
             this.floorComboBox.UseSelectable = true;
             // 
@@ -471,9 +492,10 @@
             this.entryDatePicker.CustomFormat = "MM-dd-yyyy";
             this.entryDatePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.entryDatePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.entryDatePicker.Location = new System.Drawing.Point(16, 140);
+            this.entryDatePicker.Location = new System.Drawing.Point(21, 172);
+            this.entryDatePicker.Margin = new System.Windows.Forms.Padding(4);
             this.entryDatePicker.Name = "entryDatePicker";
-            this.entryDatePicker.Size = new System.Drawing.Size(314, 26);
+            this.entryDatePicker.Size = new System.Drawing.Size(417, 30);
             this.entryDatePicker.TabIndex = 26;
             this.entryDatePicker.Value = new System.DateTime(2014, 5, 11, 0, 0, 0, 0);
             // 
@@ -482,9 +504,10 @@
             this.entryLabel.AutoSize = true;
             this.entryLabel.BackColor = System.Drawing.Color.Transparent;
             this.entryLabel.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.entryLabel.Location = new System.Drawing.Point(16, 118);
+            this.entryLabel.Location = new System.Drawing.Point(21, 145);
+            this.entryLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.entryLabel.Name = "entryLabel";
-            this.entryLabel.Size = new System.Drawing.Size(80, 19);
+            this.entryLabel.Size = new System.Drawing.Size(86, 20);
             this.entryLabel.TabIndex = 30;
             this.entryLabel.Text = "Entry [date]";
             this.entryLabel.UseCustomBackColor = true;
@@ -493,17 +516,18 @@
             // roomTypeComboBox
             // 
             this.roomTypeComboBox.FormattingEnabled = true;
-            this.roomTypeComboBox.ItemHeight = 23;
+            this.roomTypeComboBox.ItemHeight = 24;
             this.roomTypeComboBox.Items.AddRange(new object[] {
             "Single",
             "Double",
             "Twin",
             "Duplex",
             "Suite"});
-            this.roomTypeComboBox.Location = new System.Drawing.Point(173, 29);
+            this.roomTypeComboBox.Location = new System.Drawing.Point(231, 36);
+            this.roomTypeComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.roomTypeComboBox.Name = "roomTypeComboBox";
             this.roomTypeComboBox.PromptText = "Room type";
-            this.roomTypeComboBox.Size = new System.Drawing.Size(159, 29);
+            this.roomTypeComboBox.Size = new System.Drawing.Size(211, 30);
             this.roomTypeComboBox.TabIndex = 22;
             this.roomTypeComboBox.UseSelectable = true;
             this.roomTypeComboBox.SelectedIndexChanged += new System.EventHandler(this.roomTypeComboBox_SelectedIndexChanged);
@@ -513,9 +537,10 @@
             this.choiceLabel.AutoSize = true;
             this.choiceLabel.BackColor = System.Drawing.Color.Transparent;
             this.choiceLabel.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.choiceLabel.Location = new System.Drawing.Point(16, 8);
+            this.choiceLabel.Location = new System.Drawing.Point(21, 10);
+            this.choiceLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.choiceLabel.Name = "choiceLabel";
-            this.choiceLabel.Size = new System.Drawing.Size(85, 19);
+            this.choiceLabel.Size = new System.Drawing.Size(91, 20);
             this.choiceLabel.TabIndex = 21;
             this.choiceLabel.Text = "Your choices";
             this.choiceLabel.UseCustomBackColor = true;
@@ -546,26 +571,28 @@
             this.leftMPanel.Controls.Add(this.addLabel);
             this.leftMPanel.HorizontalScrollbarBarColor = true;
             this.leftMPanel.HorizontalScrollbarHighlightOnWheel = false;
-            this.leftMPanel.HorizontalScrollbarSize = 10;
-            this.leftMPanel.Location = new System.Drawing.Point(3, 15);
+            this.leftMPanel.HorizontalScrollbarSize = 12;
+            this.leftMPanel.Location = new System.Drawing.Point(4, 18);
+            this.leftMPanel.Margin = new System.Windows.Forms.Padding(4);
             this.leftMPanel.Name = "leftMPanel";
-            this.leftMPanel.Size = new System.Drawing.Size(345, 421);
+            this.leftMPanel.Size = new System.Drawing.Size(460, 518);
             this.leftMPanel.TabIndex = 4;
             this.leftMPanel.UseCustomBackColor = true;
             this.leftMPanel.UseCustomForeColor = true;
             this.leftMPanel.UseStyleColors = true;
             this.leftMPanel.VerticalScrollbarBarColor = true;
             this.leftMPanel.VerticalScrollbarHighlightOnWheel = false;
-            this.leftMPanel.VerticalScrollbarSize = 10;
+            this.leftMPanel.VerticalScrollbarSize = 13;
             // 
             // emailLabel
             // 
             this.emailLabel.AutoSize = true;
             this.emailLabel.BackColor = System.Drawing.Color.Transparent;
             this.emailLabel.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.emailLabel.Location = new System.Drawing.Point(15, 225);
+            this.emailLabel.Location = new System.Drawing.Point(20, 277);
+            this.emailLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.emailLabel.Name = "emailLabel";
-            this.emailLabel.Size = new System.Drawing.Size(130, 19);
+            this.emailLabel.Size = new System.Drawing.Size(140, 20);
             this.emailLabel.TabIndex = 15;
             this.emailLabel.Text = "Your e-mail address";
             this.emailLabel.UseCustomBackColor = true;
@@ -576,9 +603,10 @@
             this.nameLabel.AutoSize = true;
             this.nameLabel.BackColor = System.Drawing.Color.Transparent;
             this.nameLabel.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.nameLabel.Location = new System.Drawing.Point(14, 7);
+            this.nameLabel.Location = new System.Drawing.Point(19, 9);
+            this.nameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Size = new System.Drawing.Size(45, 19);
+            this.nameLabel.Size = new System.Drawing.Size(49, 20);
             this.nameLabel.TabIndex = 4;
             this.nameLabel.Text = "Name";
             this.nameLabel.UseCustomBackColor = true;
@@ -589,14 +617,15 @@
             this.emailTextBox.BackColor = System.Drawing.Color.White;
             this.emailTextBox.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.emailTextBox.Lines = new string[0];
-            this.emailTextBox.Location = new System.Drawing.Point(15, 247);
+            this.emailTextBox.Location = new System.Drawing.Point(20, 304);
+            this.emailTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.emailTextBox.MaxLength = 32767;
             this.emailTextBox.Name = "emailTextBox";
             this.emailTextBox.PasswordChar = '\0';
             this.emailTextBox.PromptText = "first.last@example.com";
             this.emailTextBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.emailTextBox.SelectedText = "";
-            this.emailTextBox.Size = new System.Drawing.Size(316, 29);
+            this.emailTextBox.Size = new System.Drawing.Size(421, 36);
             this.emailTextBox.Style = MetroFramework.MetroColorStyle.White;
             this.emailTextBox.TabIndex = 14;
             this.emailTextBox.UseCustomBackColor = true;
@@ -607,14 +636,15 @@
             this.yearTextBox.BackColor = System.Drawing.Color.White;
             this.yearTextBox.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.yearTextBox.Lines = new string[0];
-            this.yearTextBox.Location = new System.Drawing.Point(230, 84);
+            this.yearTextBox.Location = new System.Drawing.Point(307, 103);
+            this.yearTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.yearTextBox.MaxLength = 32767;
             this.yearTextBox.Name = "yearTextBox";
             this.yearTextBox.PasswordChar = '\0';
             this.yearTextBox.PromptText = "Year";
             this.yearTextBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.yearTextBox.SelectedText = "";
-            this.yearTextBox.Size = new System.Drawing.Size(101, 29);
+            this.yearTextBox.Size = new System.Drawing.Size(135, 36);
             this.yearTextBox.Style = MetroFramework.MetroColorStyle.White;
             this.yearTextBox.TabIndex = 9;
             this.yearTextBox.UseCustomBackColor = true;
@@ -623,7 +653,7 @@
             // monthComboBox
             // 
             this.monthComboBox.FormattingEnabled = true;
-            this.monthComboBox.ItemHeight = 23;
+            this.monthComboBox.ItemHeight = 24;
             this.monthComboBox.Items.AddRange(new object[] {
             "January ",
             "February ",
@@ -637,25 +667,27 @@
             "October ",
             "November ",
             "December"});
-            this.monthComboBox.Location = new System.Drawing.Point(15, 84);
+            this.monthComboBox.Location = new System.Drawing.Point(20, 103);
+            this.monthComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.monthComboBox.Name = "monthComboBox";
             this.monthComboBox.PromptText = "Month";
-            this.monthComboBox.Size = new System.Drawing.Size(120, 29);
+            this.monthComboBox.Size = new System.Drawing.Size(159, 30);
             this.monthComboBox.TabIndex = 6;
             this.monthComboBox.UseSelectable = true;
             // 
             // genderComboBox
             // 
             this.genderComboBox.FormattingEnabled = true;
-            this.genderComboBox.ItemHeight = 23;
+            this.genderComboBox.ItemHeight = 24;
             this.genderComboBox.Items.AddRange(new object[] {
             "Female",
             "Male",
             "Other"});
-            this.genderComboBox.Location = new System.Drawing.Point(15, 140);
+            this.genderComboBox.Location = new System.Drawing.Point(20, 172);
+            this.genderComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.genderComboBox.Name = "genderComboBox";
             this.genderComboBox.PromptText = "........";
-            this.genderComboBox.Size = new System.Drawing.Size(315, 29);
+            this.genderComboBox.Size = new System.Drawing.Size(419, 30);
             this.genderComboBox.TabIndex = 11;
             this.genderComboBox.UseSelectable = true;
             // 
@@ -664,9 +696,10 @@
             this.birthdayLabel.AutoSize = true;
             this.birthdayLabel.BackColor = System.Drawing.Color.Transparent;
             this.birthdayLabel.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.birthdayLabel.Location = new System.Drawing.Point(12, 63);
+            this.birthdayLabel.Location = new System.Drawing.Point(16, 78);
+            this.birthdayLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.birthdayLabel.Name = "birthdayLabel";
-            this.birthdayLabel.Size = new System.Drawing.Size(60, 19);
+            this.birthdayLabel.Size = new System.Drawing.Size(64, 20);
             this.birthdayLabel.TabIndex = 5;
             this.birthdayLabel.Text = "Birthday";
             this.birthdayLabel.UseCustomBackColor = true;
@@ -675,7 +708,7 @@
             // dayComboBox
             // 
             this.dayComboBox.FormattingEnabled = true;
-            this.dayComboBox.ItemHeight = 23;
+            this.dayComboBox.ItemHeight = 24;
             this.dayComboBox.Items.AddRange(new object[] {
             "01",
             "02",
@@ -708,10 +741,11 @@
             "29",
             "30",
             "31"});
-            this.dayComboBox.Location = new System.Drawing.Point(141, 84);
+            this.dayComboBox.Location = new System.Drawing.Point(188, 103);
+            this.dayComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.dayComboBox.Name = "dayComboBox";
             this.dayComboBox.PromptText = "Day";
-            this.dayComboBox.Size = new System.Drawing.Size(83, 29);
+            this.dayComboBox.Size = new System.Drawing.Size(109, 30);
             this.dayComboBox.TabIndex = 8;
             this.dayComboBox.UseSelectable = true;
             // 
@@ -720,9 +754,10 @@
             this.phoneNumberLabel.AutoSize = true;
             this.phoneNumberLabel.BackColor = System.Drawing.Color.Transparent;
             this.phoneNumberLabel.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.phoneNumberLabel.Location = new System.Drawing.Point(14, 171);
+            this.phoneNumberLabel.Location = new System.Drawing.Point(19, 210);
+            this.phoneNumberLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.phoneNumberLabel.Name = "phoneNumberLabel";
-            this.phoneNumberLabel.Size = new System.Drawing.Size(100, 19);
+            this.phoneNumberLabel.Size = new System.Drawing.Size(105, 20);
             this.phoneNumberLabel.TabIndex = 12;
             this.phoneNumberLabel.Text = "Phone number";
             this.phoneNumberLabel.UseCustomBackColor = true;
@@ -733,14 +768,15 @@
             this.firstNameTextBox.BackColor = System.Drawing.Color.White;
             this.firstNameTextBox.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.firstNameTextBox.Lines = new string[0];
-            this.firstNameTextBox.Location = new System.Drawing.Point(15, 27);
+            this.firstNameTextBox.Location = new System.Drawing.Point(20, 33);
+            this.firstNameTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.firstNameTextBox.MaxLength = 32767;
             this.firstNameTextBox.Name = "firstNameTextBox";
             this.firstNameTextBox.PasswordChar = '\0';
             this.firstNameTextBox.PromptText = "First";
             this.firstNameTextBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.firstNameTextBox.SelectedText = "";
-            this.firstNameTextBox.Size = new System.Drawing.Size(155, 29);
+            this.firstNameTextBox.Size = new System.Drawing.Size(207, 36);
             this.firstNameTextBox.Style = MetroFramework.MetroColorStyle.White;
             this.firstNameTextBox.TabIndex = 2;
             this.firstNameTextBox.UseCustomBackColor = true;
@@ -751,9 +787,10 @@
             this.genderLabel.AutoSize = true;
             this.genderLabel.BackColor = System.Drawing.Color.Transparent;
             this.genderLabel.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.genderLabel.Location = new System.Drawing.Point(13, 118);
+            this.genderLabel.Location = new System.Drawing.Point(17, 145);
+            this.genderLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.genderLabel.Name = "genderLabel";
-            this.genderLabel.Size = new System.Drawing.Size(54, 19);
+            this.genderLabel.Size = new System.Drawing.Size(57, 20);
             this.genderLabel.TabIndex = 10;
             this.genderLabel.Text = "Gender";
             this.genderLabel.UseCustomBackColor = true;
@@ -764,14 +801,15 @@
             this.zipComboBox.BackColor = System.Drawing.Color.White;
             this.zipComboBox.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.zipComboBox.Lines = new string[0];
-            this.zipComboBox.Location = new System.Drawing.Point(172, 378);
+            this.zipComboBox.Location = new System.Drawing.Point(229, 465);
+            this.zipComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.zipComboBox.MaxLength = 32767;
             this.zipComboBox.Name = "zipComboBox";
             this.zipComboBox.PasswordChar = '\0';
             this.zipComboBox.PromptText = "Zip code";
             this.zipComboBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.zipComboBox.SelectedText = "";
-            this.zipComboBox.Size = new System.Drawing.Size(159, 29);
+            this.zipComboBox.Size = new System.Drawing.Size(212, 36);
             this.zipComboBox.Style = MetroFramework.MetroColorStyle.White;
             this.zipComboBox.TabIndex = 20;
             this.zipComboBox.UseCustomBackColor = true;
@@ -782,14 +820,15 @@
             this.phoneNumberTextBox.BackColor = System.Drawing.Color.White;
             this.phoneNumberTextBox.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.phoneNumberTextBox.Lines = new string[0];
-            this.phoneNumberTextBox.Location = new System.Drawing.Point(14, 193);
+            this.phoneNumberTextBox.Location = new System.Drawing.Point(19, 238);
+            this.phoneNumberTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.phoneNumberTextBox.MaxLength = 32767;
             this.phoneNumberTextBox.Name = "phoneNumberTextBox";
             this.phoneNumberTextBox.PasswordChar = '\0';
             this.phoneNumberTextBox.PromptText = "(999) 999-999";
             this.phoneNumberTextBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.phoneNumberTextBox.SelectedText = "";
-            this.phoneNumberTextBox.Size = new System.Drawing.Size(316, 29);
+            this.phoneNumberTextBox.Size = new System.Drawing.Size(421, 36);
             this.phoneNumberTextBox.Style = MetroFramework.MetroColorStyle.White;
             this.phoneNumberTextBox.TabIndex = 13;
             this.phoneNumberTextBox.UseCustomBackColor = true;
@@ -799,7 +838,7 @@
             // stateComboBox
             // 
             this.stateComboBox.FormattingEnabled = true;
-            this.stateComboBox.ItemHeight = 23;
+            this.stateComboBox.ItemHeight = 24;
             this.stateComboBox.Items.AddRange(new object[] {
             "Alabama ",
             "Alaska ",
@@ -848,10 +887,11 @@
             "West Virginia ",
             "Wisconsin ",
             "Wyoming"});
-            this.stateComboBox.Location = new System.Drawing.Point(15, 378);
+            this.stateComboBox.Location = new System.Drawing.Point(20, 465);
+            this.stateComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.stateComboBox.Name = "stateComboBox";
             this.stateComboBox.PromptText = "State";
-            this.stateComboBox.Size = new System.Drawing.Size(150, 29);
+            this.stateComboBox.Size = new System.Drawing.Size(199, 30);
             this.stateComboBox.TabIndex = 19;
             this.stateComboBox.UseSelectable = true;
             // 
@@ -860,14 +900,15 @@
             this.lastNameTextBox.BackColor = System.Drawing.Color.White;
             this.lastNameTextBox.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.lastNameTextBox.Lines = new string[0];
-            this.lastNameTextBox.Location = new System.Drawing.Point(176, 27);
+            this.lastNameTextBox.Location = new System.Drawing.Point(235, 33);
+            this.lastNameTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.lastNameTextBox.MaxLength = 32767;
             this.lastNameTextBox.Name = "lastNameTextBox";
             this.lastNameTextBox.PasswordChar = '\0';
             this.lastNameTextBox.PromptText = "Last";
             this.lastNameTextBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.lastNameTextBox.SelectedText = "";
-            this.lastNameTextBox.Size = new System.Drawing.Size(155, 29);
+            this.lastNameTextBox.Size = new System.Drawing.Size(207, 36);
             this.lastNameTextBox.TabIndex = 3;
             this.lastNameTextBox.UseCustomBackColor = true;
             this.lastNameTextBox.UseSelectable = true;
@@ -877,14 +918,15 @@
             this.cityTextBox.BackColor = System.Drawing.Color.White;
             this.cityTextBox.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.cityTextBox.Lines = new string[0];
-            this.cityTextBox.Location = new System.Drawing.Point(171, 336);
+            this.cityTextBox.Location = new System.Drawing.Point(228, 414);
+            this.cityTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.cityTextBox.MaxLength = 32767;
             this.cityTextBox.Name = "cityTextBox";
             this.cityTextBox.PasswordChar = '\0';
             this.cityTextBox.PromptText = "City";
             this.cityTextBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.cityTextBox.SelectedText = "";
-            this.cityTextBox.Size = new System.Drawing.Size(159, 29);
+            this.cityTextBox.Size = new System.Drawing.Size(212, 36);
             this.cityTextBox.Style = MetroFramework.MetroColorStyle.White;
             this.cityTextBox.TabIndex = 18;
             this.cityTextBox.UseCustomBackColor = true;
@@ -895,9 +937,10 @@
             this.metroLabel6.AutoSize = true;
             this.metroLabel6.BackColor = System.Drawing.Color.Transparent;
             this.metroLabel6.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel6.Location = new System.Drawing.Point(14, 247);
+            this.metroLabel6.Location = new System.Drawing.Point(19, 304);
+            this.metroLabel6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabel6.Name = "metroLabel6";
-            this.metroLabel6.Size = new System.Drawing.Size(88, 19);
+            this.metroLabel6.Size = new System.Drawing.Size(93, 20);
             this.metroLabel6.TabIndex = 16;
             this.metroLabel6.Text = "Your address";
             this.metroLabel6.UseCustomBackColor = true;
@@ -908,14 +951,15 @@
             this.aptTextBox.BackColor = System.Drawing.Color.White;
             this.aptTextBox.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.aptTextBox.Lines = new string[0];
-            this.aptTextBox.Location = new System.Drawing.Point(14, 335);
+            this.aptTextBox.Location = new System.Drawing.Point(19, 412);
+            this.aptTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.aptTextBox.MaxLength = 32767;
             this.aptTextBox.Name = "aptTextBox";
             this.aptTextBox.PasswordChar = '\0';
             this.aptTextBox.PromptText = "Apt./Suite";
             this.aptTextBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.aptTextBox.SelectedText = "";
-            this.aptTextBox.Size = new System.Drawing.Size(151, 29);
+            this.aptTextBox.Size = new System.Drawing.Size(201, 36);
             this.aptTextBox.Style = MetroFramework.MetroColorStyle.White;
             this.aptTextBox.TabIndex = 17;
             this.aptTextBox.UseCustomBackColor = true;
@@ -926,14 +970,15 @@
             this.addLabel.BackColor = System.Drawing.Color.White;
             this.addLabel.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.addLabel.Lines = new string[0];
-            this.addLabel.Location = new System.Drawing.Point(13, 290);
+            this.addLabel.Location = new System.Drawing.Point(17, 357);
+            this.addLabel.Margin = new System.Windows.Forms.Padding(4);
             this.addLabel.MaxLength = 32767;
             this.addLabel.Name = "addLabel";
             this.addLabel.PasswordChar = '\0';
             this.addLabel.PromptText = "Street address";
             this.addLabel.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.addLabel.SelectedText = "";
-            this.addLabel.Size = new System.Drawing.Size(316, 29);
+            this.addLabel.Size = new System.Drawing.Size(421, 36);
             this.addLabel.Style = MetroFramework.MetroColorStyle.White;
             this.addLabel.TabIndex = 15;
             this.addLabel.UseCustomBackColor = true;
@@ -947,24 +992,26 @@
             this.searchPage.Controls.Add(this.searchTextBox);
             this.searchPage.HorizontalScrollbarBarColor = true;
             this.searchPage.HorizontalScrollbarHighlightOnWheel = false;
-            this.searchPage.HorizontalScrollbarSize = 10;
+            this.searchPage.HorizontalScrollbarSize = 12;
             this.searchPage.Location = new System.Drawing.Point(4, 38);
+            this.searchPage.Margin = new System.Windows.Forms.Padding(4);
             this.searchPage.Name = "searchPage";
-            this.searchPage.Size = new System.Drawing.Size(976, 440);
+            this.searchPage.Size = new System.Drawing.Size(1304, 551);
             this.searchPage.TabIndex = 4;
             this.searchPage.Text = "Universal Search";
             this.searchPage.VerticalScrollbarBarColor = true;
             this.searchPage.VerticalScrollbarHighlightOnWheel = false;
-            this.searchPage.VerticalScrollbarSize = 10;
+            this.searchPage.VerticalScrollbarSize = 13;
             // 
             // SearchError
             // 
             this.SearchError.AutoSize = true;
             this.SearchError.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.SearchError.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.SearchError.Location = new System.Drawing.Point(270, 37);
+            this.SearchError.Location = new System.Drawing.Point(360, 46);
+            this.SearchError.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.SearchError.Name = "SearchError";
-            this.SearchError.Size = new System.Drawing.Size(313, 150);
+            this.SearchError.Size = new System.Drawing.Size(332, 150);
             this.SearchError.Style = MetroFramework.MetroColorStyle.Green;
             this.SearchError.TabIndex = 19;
             this.SearchError.Text = "I ran out of entries :( SORRY DUDE.\r\n\r\nYou know, we can make another deal. \r\n\r\nI " +
@@ -977,10 +1024,11 @@
             this.searchDataGridView.AllowUserToAddRows = false;
             this.searchDataGridView.AllowUserToDeleteRows = false;
             this.searchDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.searchDataGridView.Location = new System.Drawing.Point(68, 41);
+            this.searchDataGridView.Location = new System.Drawing.Point(91, 50);
+            this.searchDataGridView.Margin = new System.Windows.Forms.Padding(4);
             this.searchDataGridView.Name = "searchDataGridView";
             this.searchDataGridView.ReadOnly = true;
-            this.searchDataGridView.Size = new System.Drawing.Size(730, 236);
+            this.searchDataGridView.Size = new System.Drawing.Size(973, 290);
             this.searchDataGridView.TabIndex = 18;
             this.searchDataGridView.Visible = false;
             // 
@@ -989,9 +1037,10 @@
             this.searchButton.BackColor = System.Drawing.Color.Transparent;
             this.searchButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("searchButton.BackgroundImage")));
             this.searchButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.searchButton.Location = new System.Drawing.Point(759, 197);
+            this.searchButton.Location = new System.Drawing.Point(1012, 242);
+            this.searchButton.Margin = new System.Windows.Forms.Padding(4);
             this.searchButton.Name = "searchButton";
-            this.searchButton.Size = new System.Drawing.Size(46, 29);
+            this.searchButton.Size = new System.Drawing.Size(61, 36);
             this.searchButton.TabIndex = 17;
             this.searchButton.UseCustomBackColor = true;
             this.searchButton.UseSelectable = true;
@@ -1004,14 +1053,15 @@
             this.searchTextBox.Icon = ((System.Drawing.Image)(resources.GetObject("searchTextBox.Icon")));
             this.searchTextBox.IconRight = true;
             this.searchTextBox.Lines = new string[0];
-            this.searchTextBox.Location = new System.Drawing.Point(75, 197);
+            this.searchTextBox.Location = new System.Drawing.Point(100, 242);
+            this.searchTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.searchTextBox.MaxLength = 32767;
             this.searchTextBox.Name = "searchTextBox";
             this.searchTextBox.PasswordChar = '\0';
             this.searchTextBox.PromptText = "Search";
             this.searchTextBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.searchTextBox.SelectedText = "";
-            this.searchTextBox.Size = new System.Drawing.Size(713, 29);
+            this.searchTextBox.Size = new System.Drawing.Size(951, 36);
             this.searchTextBox.Style = MetroFramework.MetroColorStyle.White;
             this.searchTextBox.TabIndex = 15;
             this.searchTextBox.UseCustomBackColor = true;
@@ -1024,24 +1074,27 @@
             this.metroTabPage2.HorizontalScrollbar = true;
             this.metroTabPage2.HorizontalScrollbarBarColor = true;
             this.metroTabPage2.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage2.HorizontalScrollbarSize = 10;
+            this.metroTabPage2.HorizontalScrollbarSize = 12;
             this.metroTabPage2.Location = new System.Drawing.Point(4, 38);
+            this.metroTabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.metroTabPage2.Name = "metroTabPage2";
-            this.metroTabPage2.Size = new System.Drawing.Size(976, 440);
+            this.metroTabPage2.Size = new System.Drawing.Size(1304, 551);
             this.metroTabPage2.TabIndex = 3;
             this.metroTabPage2.Text = "Reservation Adv. view";
             this.metroTabPage2.VerticalScrollbar = true;
             this.metroTabPage2.VerticalScrollbarBarColor = true;
             this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage2.VerticalScrollbarSize = 10;
+            this.metroTabPage2.VerticalScrollbarSize = 13;
             // 
             // resTotalDataGridView
             // 
             this.resTotalDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.resTotalDataGridView.Location = new System.Drawing.Point(0, 3);
+            this.resTotalDataGridView.Location = new System.Drawing.Point(0, 4);
+            this.resTotalDataGridView.Margin = new System.Windows.Forms.Padding(4);
             this.resTotalDataGridView.Name = "resTotalDataGridView";
-            this.resTotalDataGridView.Size = new System.Drawing.Size(976, 434);
+            this.resTotalDataGridView.Size = new System.Drawing.Size(1301, 534);
             this.resTotalDataGridView.TabIndex = 2;
+            this.resTotalDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ResTotalDataGridView_CellContentClick);
             // 
             // roomPage
             // 
@@ -1053,24 +1106,26 @@
             this.roomPage.Controls.Add(this.occupiedLabel);
             this.roomPage.HorizontalScrollbarBarColor = true;
             this.roomPage.HorizontalScrollbarHighlightOnWheel = false;
-            this.roomPage.HorizontalScrollbarSize = 10;
+            this.roomPage.HorizontalScrollbarSize = 12;
             this.roomPage.Location = new System.Drawing.Point(4, 38);
+            this.roomPage.Margin = new System.Windows.Forms.Padding(4);
             this.roomPage.Name = "roomPage";
-            this.roomPage.Size = new System.Drawing.Size(976, 440);
+            this.roomPage.Size = new System.Drawing.Size(1304, 551);
             this.roomPage.TabIndex = 2;
             this.roomPage.Text = "Room availibility";
             this.roomPage.VerticalScrollbarBarColor = true;
             this.roomPage.VerticalScrollbarHighlightOnWheel = false;
-            this.roomPage.VerticalScrollbarSize = 10;
+            this.roomPage.VerticalScrollbarSize = 13;
             // 
             // metroLabel13
             // 
             this.metroLabel13.AutoSize = true;
             this.metroLabel13.BackColor = System.Drawing.Color.Transparent;
             this.metroLabel13.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel13.Location = new System.Drawing.Point(459, 28);
+            this.metroLabel13.Location = new System.Drawing.Point(612, 34);
+            this.metroLabel13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabel13.Name = "metroLabel13";
-            this.metroLabel13.Size = new System.Drawing.Size(478, 19);
+            this.metroLabel13.Size = new System.Drawing.Size(506, 20);
             this.metroLabel13.TabIndex = 10;
             this.metroLabel13.Text = "Room#| Type  |  ID#   |       Name      |      Phone #      |     Entry       |  " +
     "  Depart";
@@ -1082,9 +1137,10 @@
             this.metroLabel11.AutoSize = true;
             this.metroLabel11.BackColor = System.Drawing.Color.Transparent;
             this.metroLabel11.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel11.Location = new System.Drawing.Point(-3, 28);
+            this.metroLabel11.Location = new System.Drawing.Point(-4, 34);
+            this.metroLabel11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabel11.Name = "metroLabel11";
-            this.metroLabel11.Size = new System.Drawing.Size(310, 19);
+            this.metroLabel11.Size = new System.Drawing.Size(331, 20);
             this.metroLabel11.TabIndex = 9;
             this.metroLabel11.Text = "Room#| Type  |  ID#   |       Name      |      Phone #";
             this.metroLabel11.UseCustomBackColor = true;
@@ -1095,9 +1151,10 @@
             this.reservedLabel.AutoSize = true;
             this.reservedLabel.BackColor = System.Drawing.Color.Transparent;
             this.reservedLabel.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.reservedLabel.Location = new System.Drawing.Point(459, 4);
+            this.reservedLabel.Location = new System.Drawing.Point(612, 5);
+            this.reservedLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.reservedLabel.Name = "reservedLabel";
-            this.reservedLabel.Size = new System.Drawing.Size(64, 19);
+            this.reservedLabel.Size = new System.Drawing.Size(69, 20);
             this.reservedLabel.TabIndex = 8;
             this.reservedLabel.Text = "Reserved";
             this.reservedLabel.UseCustomBackColor = true;
@@ -1110,9 +1167,11 @@
             this.roomReservedListBox.FormattingEnabled = true;
             this.roomReservedListBox.HorizontalScrollbar = true;
             this.roomReservedListBox.IntegralHeight = false;
-            this.roomReservedListBox.Location = new System.Drawing.Point(460, 50);
+            this.roomReservedListBox.ItemHeight = 16;
+            this.roomReservedListBox.Location = new System.Drawing.Point(613, 62);
+            this.roomReservedListBox.Margin = new System.Windows.Forms.Padding(4);
             this.roomReservedListBox.Name = "roomReservedListBox";
-            this.roomReservedListBox.Size = new System.Drawing.Size(516, 387);
+            this.roomReservedListBox.Size = new System.Drawing.Size(688, 476);
             this.roomReservedListBox.TabIndex = 7;
             // 
             // roomOccupiedListBox
@@ -1123,9 +1182,11 @@
             this.roomOccupiedListBox.FormattingEnabled = true;
             this.roomOccupiedListBox.HorizontalScrollbar = true;
             this.roomOccupiedListBox.IntegralHeight = false;
-            this.roomOccupiedListBox.Location = new System.Drawing.Point(0, 50);
+            this.roomOccupiedListBox.ItemHeight = 19;
+            this.roomOccupiedListBox.Location = new System.Drawing.Point(0, 62);
+            this.roomOccupiedListBox.Margin = new System.Windows.Forms.Padding(4);
             this.roomOccupiedListBox.Name = "roomOccupiedListBox";
-            this.roomOccupiedListBox.Size = new System.Drawing.Size(454, 387);
+            this.roomOccupiedListBox.Size = new System.Drawing.Size(605, 476);
             this.roomOccupiedListBox.TabIndex = 6;
             // 
             // occupiedLabel
@@ -1133,25 +1194,40 @@
             this.occupiedLabel.AutoSize = true;
             this.occupiedLabel.BackColor = System.Drawing.Color.Transparent;
             this.occupiedLabel.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.occupiedLabel.Location = new System.Drawing.Point(-3, 4);
+            this.occupiedLabel.Location = new System.Drawing.Point(-4, 5);
+            this.occupiedLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.occupiedLabel.Name = "occupiedLabel";
-            this.occupiedLabel.Size = new System.Drawing.Size(66, 19);
+            this.occupiedLabel.Size = new System.Drawing.Size(72, 20);
             this.occupiedLabel.TabIndex = 5;
             this.occupiedLabel.Text = "Occupied";
             this.occupiedLabel.UseCustomBackColor = true;
             this.occupiedLabel.UseCustomForeColor = true;
             // 
+            // metroButton1
+            // 
+            this.metroButton1.Location = new System.Drawing.Point(1233, 84);
+            this.metroButton1.Name = "metroButton1";
+            this.metroButton1.Size = new System.Drawing.Size(75, 23);
+            this.metroButton1.TabIndex = 1;
+            this.metroButton1.Text = "logout";
+            this.metroButton1.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroButton1.UseSelectable = true;
+            this.metroButton1.Click += new System.EventHandler(this.MetroButton1_Click_2);
+            // 
             // Frontend
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackImage = ((System.Drawing.Image)(resources.GetObject("$this.BackImage")));
             this.BorderStyle = MetroFramework.Forms.MetroFormBorderStyle.FixedSingle;
-            this.ClientSize = new System.Drawing.Size(998, 545);
+            this.ClientSize = new System.Drawing.Size(1331, 671);
+            this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.resPanel);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Frontend";
+            this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
             this.ShadowType = MetroFramework.Forms.MetroFormShadowType.AeroShadow;
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Style = MetroFramework.MetroColorStyle.Green;
@@ -1240,8 +1316,6 @@
         private MetroFramework.Controls.MetroButton searchButton;
         private MetroFramework.Controls.MetroLabel SearchError;
         private MetroFramework.Controls.MetroCheckBox smsCheckBox;
-
-
-     
+        private MetroFramework.Controls.MetroButton metroButton1;
     }
 }

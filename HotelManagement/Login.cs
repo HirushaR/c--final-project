@@ -27,21 +27,35 @@ namespace Hotel_Manager
             {
                 if (verifier("frontend".Trim(), usernameTextBox.Text.Trim(), passwordTextBox.Text.Trim()))
                 {
-                    this.Hide();
-                    Frontend hotel_management = new Frontend();
-                    hotel_management.Show();
+                    adminlog ad = new adminlog();
+                    ad.log();
+                    usernameTextBox.Text = "";
+                    passwordTextBox.Text = "";
+
                 }
                 else if (verifier("kitchen".Trim(), usernameTextBox.Text.Trim(), passwordTextBox.Text.Trim()))
                 {
-                    this.Hide();
-                    Kitchen kitchen_management = new Kitchen();
-                    kitchen_management.Show();
+                    kitchenlog kt = new kitchenlog();
+                    kt.log();
+                    usernameTextBox.Text = "";
+                    passwordTextBox.Text = "";
+
                 }
                 else if (verifier("bar".Trim(), usernameTextBox.Text.Trim(), passwordTextBox.Text.Trim()))
                 {
-                    this.Hide();
+                   
                     bar br_management = new bar();
                     br_management.Show();
+                    usernameTextBox.Text = "";
+                    passwordTextBox.Text = "";
+                }
+                else if (verifier("manager".Trim(), usernameTextBox.Text.Trim(), passwordTextBox.Text.Trim()))
+                {
+                    managerLog ml = new managerLog();
+                    ml.log();
+                    usernameTextBox.Text = "";
+                    passwordTextBox.Text = "";
+
                 }
                 else
                 {
